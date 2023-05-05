@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+    int n, total=0, quant;
+
+    do{
+        printf ("---------------------------------\n");
+        printf ("1 => ABACAXI - 5,00 a unidade\n");
+        printf ("2 => MAÇA - 1,00 a unidade\n");
+        printf ("3 => PERA - 4,00 a unidade\n");
+        printf ("4 => Sair\n");
+        printf ("---------------------------------\n");
+        printf ("Opcao:");
+        scanf ("%d",&n);
+
+        switch (n){
+            case 1:
+                printf ("Quantidade:");
+                scanf ("%d",&quant);
+                total=total+quant*5;
+            break;
+            case 2:
+                printf ("Quantidade:");
+                scanf ("%d",&quant);
+                total=total+quant*1;
+            break;
+            case 3:
+                printf ("Quantidade:");
+                scanf ("%d",&quant);
+                total=total+quant*4;
+            break;
+        
+            default:
+
+            break;
+        }
+    } while (n!=4);
+    
+    
+    printf ("Valor total: %d\n", total);
+
+    return 0;
+}
